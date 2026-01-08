@@ -1,26 +1,33 @@
+@import "bootstrap-icons/font/bootstrap-icons.css";
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+	--background: #f8f9fa;
+	--dark: #0d172e;
+	--light: #c0ebf1;
+	--primary: #00c2cb;
+	--secondary: #aedfdc;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+	--color-dark: var(--dark);
+	--color-bg: var(--background);
+	--color-light: var(--light);
+	--color-primary: var(--primary);
+	--color-secondary: var(--secondary);
+
+	--font-sans: var(--font-plus-jakarta-sans);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
+/* @media (prefers-color-scheme: dark) {
+	:root {
+		--background: #0d172e;
+		--foreground: #f8f9fa;
+	}
+} */
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+	background: var(--background);
+	color: var(--dark);
+	font-family: var(--font-sans), sans-serif;
 }
