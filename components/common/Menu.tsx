@@ -11,7 +11,7 @@ function Menu({}: Props) {
 				<Link href="/">
 					<Image src="/logo-dark.png" width={109} height={57} alt={"Weart.hu"} />
 				</Link>
-				<div>
+				<div className="lg:block hidden">
 					<ul className="flex space-x-6 text-light">
 						<li>
 							<Link href="/about" className="hover:text-primary">
@@ -19,7 +19,7 @@ function Menu({}: Props) {
 							</Link>
 						</li>
 						<li>
-							<Link href="/projects" className="hover:text-primary">
+							<Link href="/portfolio" className="hover:text-primary">
 								Munkáink
 							</Link>
 						</li>
@@ -29,13 +29,13 @@ function Menu({}: Props) {
 							</Link>
 						</li>
 						<li>
-							<Link href="/blog" className="hover:text-primary">
+							<Link href="/posts" className="hover:text-primary">
 								Blog
 							</Link>
 						</li>
 					</ul>
 				</div>
-				<Button link="/kapcsolat">Beszélgessünk</Button>
+				<Button link="/contact">Beszélgessünk</Button>
 			</div>
 		</nav>
 	);
